@@ -1,0 +1,190 @@
+# nlu.yml
+version: "3.1"
+
+nlu:
+  # 시작
+  - intent: chatbot_start
+    examples: |
+      - 안녕
+      - 안녕하세요
+      - 챗봇 이용하고 싶어
+      - 챗봇 시작할래
+      - 챗봇 시작할게
+      - 시작
+
+  # 챗봇 종료
+  - intent: chatbot_bye
+    examples: |
+      - 종료할게
+      - 그만할래
+      - 여기까지만 할게
+      - 이만 끝낼게
+      - 끝
+
+  # 지역 선택(중앙부처)
+  - intent: choose_region_center
+    examples: |
+      - [중앙부처](region)
+      - [중앙부처](region) 알려줘
+      - [중앙부처](region) 궁금해
+      - [중앙부처](region) 에서는 지금 어떤 정책들이 실행되고 있어?
+
+  # 지역선택(대전)
+  - intent: choose_region_Deajeon
+    examples: |
+      - [대전](region)
+      - [대전](region) 알려줘
+      - [대전](region) 궁금해
+      - [대전](region) 에서 시행하고 있는 정책들이 궁금한데 알려줄래?
+
+  # 지역 선택(서울)
+  - intent: choose_region_Seoul
+    examples: |
+      - [서울](region)
+      - [서울](region) 알려줘
+      - [서울](region) 궁금해
+      - [서울](region) 에서 시행하고 있는 정책들이 궁금한데 알려줄래?
+
+  # 지역 선택(부산)
+  - intent: choose_region_Busan
+    examples: |
+      - [부산](region)
+      - [부산](region) 알려줘
+      - [부산](region) 궁금해
+      - [부산](region) 에서 시행하고 있는 정책들이 궁금한데 알려줄래?
+
+  # 정책분야 선택
+  - intent: choose_policies
+    examples: |
+      - [일자리분야](policies)
+      - [주거분야](policies)
+      - [교육분야](policies)
+      - [복지문화분야](policies)
+      - [참여권리분야](policies)
+      - [일자리분야](policies) 정책을 알고 싶어
+      - [주거분야](policies) 정책을 알고 싶어
+      - [교육분야](policies) 정책을 알고 싶어
+      - [복지문화분야](policies) 정책을 알고 싶어
+      - [참여권리분야](policies) 정책을 알고 싶어
+      - [일자리분야](policies) 정책이 뭐가 있는지 궁금해
+      - [주거분야](policies) 정책이 뭐가 있는지 궁금해
+      - [교육분야](policies) 정책이 뭐가 있는지 궁금해
+      - [복지문화분야](policies) 정책이 뭐가 있는지 궁금해
+      - [참여권리분야](policies) 정책이 뭐가 있는지 궁금해
+      - [일자리분야](policies) 정책이 뭐가 있는지 궁금해
+
+  # 대전 정책 선택
+  - intent: daejeon_choose_policy
+    examples: |
+      - [미래두배 청년통장](policy)
+      - [청년내일희망카드](policy)
+      - [청년내일희망카드](policy) 궁금해
+      - [청년내일희망카드](policy) 알려줘
+      - [청년마인드링크](policy)
+      - [청년마인드링크](policy) 궁금해
+      - [청년마인드링크](policy) 알려줘
+      - [청년마음건강지원](policy)
+      - [청년마음건강지원](policy) 궁금해
+      - [청년마음건강지원](policy) 알려줘
+      - [대학생학자금 이자 지원](policy)
+      - [대학생학자금 이자 지원](policy) 궁금해
+      - [대학생학자금 이자 지원](policy) 알려줘
+      - [구직청년 면접 정장 대여](policy)
+      - [구직청년 면접 정장 대여](policy) 궁금해
+      - [구직청년 면접 정장 대여](policy) 알려줘
+      - [대전 청년 월세지원 사업](policy)
+      - [대전 청년 월세지원 사업](policy) 궁금해
+      - [대전 청년 월세지원 사업](policy) 알려줘
+      - [청년부상제대군인 등 진로탐색비 지원사업](policy)
+      - [청년부상제대군인 등 진로탐색비 지원사업](policy) 궁금해
+      - [청년부상제대군인 등 진로탐색비 지원사업](policy) 알려줘
+      - [학자금 대출 신용회복 지원](policy)
+      - [청년월세 한시 특별지원](policy)
+
+  # 중앙부처 정책 선택
+  - intent: center_choose_policy
+    examples: |
+      - [청년일자리 도약장려금](policy)
+      - [청년일자리 도약장려금](policy) 알려줘
+      - [청년일자리 도약장려금](policy) 궁금해
+      - [취업희망프로그램](policy)
+      - [취업희망프로그램](policy) 알려줘
+      - [취업희망프로그램](policy) 궁금해
+      - [청년도전지원사업](policy) 
+      - [청년도전지원사업](policy) 알려줘
+      - [청년도전지원사업](policy) 궁금해
+      - [평생교육바우처 사업](policy) 
+      - [평생교육바우처 사업](policy) 알려줘
+      - [평생교육바우처 사업](policy) 궁금해
+
+  # 서울 정책 선택
+  - intent: Seoul_choose_policy
+    examples: |
+      - [서울시 취업날개서비스 운영](policy)
+      - [서울시 취업날개서비스 운영](policy) 알려줘
+      - [서울시 취업날개서비스 운영](policy) 궁금해
+      - [서울시 지역연계형 청년 창업 지원사업](policy)
+      - [서울시 지역연계형 청년 창업 지원사업](policy) 알려줘
+      - [서울시 지역연계형 청년 창업 지원사업](policy) 궁금해
+      - [서울 영테크 지원사업](policy)
+      - [서울 영테크 지원사업](policy) 알려줘
+      - [서울 영테크 지원사업](policy) 궁금해
+      - [서울시 학자금대출 신용회복](policy)
+      - [서울시 학자금대출 신용회복](policy) 알려줘
+      - [서울시 학자금대출 신용회복](policy) 궁금해
+      - [청년취업사관학교 교육생 모집](policy)
+      - [청년취업사관학교 교육생 모집](policy) 알려줘
+      - [청년취업사관학교 교육생 모집](policy) 궁금해
+      - [서울형 청년인턴 직무캠프](policy)
+      - [서울형 청년인턴 직무캠프](policy) 알려줘
+      - [서울형 청년인턴 직무캠프](policy) 궁금해
+      - [기후동행카드](policy)
+      - [기후동행카드](policy) 알려줘
+      - [기후동행카드](policy) 궁금해
+      - [서울시 청년동행센터](policy)
+      - [서울시 청년동행센터](policy) 알려줘
+      - [서울시 청년동행센터](policy) 궁금해
+
+  # 부산 정책 선택
+  - intent: Busan_choose_policy
+    examples: |
+      - [부산 지역주도형 청년일자리사업](policy)
+      - [부산 지역주도형 청년일자리사업](policy) 알려줘
+      - [부산 지역주도형 청년일자리사업](policy) 궁금해
+      - [부산형 관광-마이스업 일자리 채움 지원금](policy)
+      - [부산형 관광-마이스업 일자리 채움 지원금](policy) 알려줘
+      - [부산형 관광-마이스업 일자리 채움 지원금](policy) 궁금해
+      - [청년월세 한시 특별지원 2차](policy)
+      - [청년월세 한시 특별지원 2차](policy) 알려줘
+      - [청년월세 한시 특별지원 2차](policy) 궁금해
+      - [전세보증금반환보증 보증료지원](policy)
+      - [전세보증금반환보증 보증료지원](policy) 알려줘
+      - [전세보증금반환보증 보증료지원](policy) 궁금해
+      - [청년 자격증 등 시험 응시료 지원사업](policy)
+      - [청년 자격증 등 시험 응시료 지원사업](policy) 알려줘
+      - [청년 자격증 등 시험 응시료 지원사업](policy) 궁금해
+      - [동백패스](policy)
+      - [동백패스(대중교통 통합할인제)](policy) 알려줘
+      - [동백패스(대중교통 통합할인제)](policy) 궁금해
+      - [청년 마음이음(일대일 상담)](policy)
+      - [청년 마음이음(일대일 상담)](policy) 알려줘
+      - [청년 마음이음(일대일 상담)](policy) 궁금해
+      - [청년 마음이음(일대일 상담)](policy)
+      - [청년 마음이음(일대일 상담)](policy) 알려줘
+      - [청년 마음이음(일대일 상담)](policy) 궁금해
+      - [청년 공간 운영](policy)
+      - [청년 공간 운영](policy) 알려줘
+      - [청년 공간 운영](policy) 궁금해
+
+  # 정보값
+  - intent: choose_info
+    examples: |
+      - [요약](info)
+      - [요약](info) 해줘
+      - [신청자격](info)
+      - [신청자격](info) 알고 싶어
+      - [신청자격](info) 출력해줘
+      - [신청방법](info)
+      - [신청방법](info) 은?
+      - [신청방법](info) 어떻게 돼?
+      - [신청방법](info) 어떻게 되는 거야?
